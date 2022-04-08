@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="RepositoryList">
+    tools:context=".repositoryScreen.RepositoryList">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -18,9 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/repository" />
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

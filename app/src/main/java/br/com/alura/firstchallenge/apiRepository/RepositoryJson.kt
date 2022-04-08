@@ -1,4 +1,4 @@
-package br.com.alura.firstchallenge.api
+package br.com.alura.firstchallenge.apiRepository
 
 data class RepositoryJson(
     val incomplete_results: Boolean,

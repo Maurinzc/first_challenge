@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.alura.firstchallenge.api.Item
+import br.com.alura.firstchallenge.apiRepository.Item
 import br.com.alura.firstchallenge.databinding.RepositoryBinding
 
 
@@ -30,9 +30,7 @@ class RepositoryAdapter(
             nameSurname.text = list.owner.id.toString()
             forksNumber.text = list.forks_count.toString()
             starRateNumber.text = list.stargazers_count.toString()
-
         }
-
     }
 
     override fun onCreateViewHolder(
@@ -45,11 +43,12 @@ class RepositoryAdapter(
             false
         )
         return ViewHolder(binding)
-    }
-
+        }
+    
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val list = lists[position]
         holder.vincula(list)
+
     }
 
     override fun getItemCount(): Int {
@@ -57,11 +56,8 @@ class RepositoryAdapter(
     }
 
     fun update(list: List<Item>) {
-        this.lists.clear()
         this.lists.addAll(list)
         notifyDataSetChanged()
-
     }
-
 }
 

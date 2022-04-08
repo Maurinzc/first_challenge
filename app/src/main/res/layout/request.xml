@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/repository_title"
+        android:id="@+id/request_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -19,15 +19,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/repository_body"
+        android:id="@+id/request_body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Body of the pull request"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@id/repository_title"
-        app:layout_constraintLeft_toLeftOf="@id/repository_title"
-        app:layout_constraintStart_toStartOf="@id/repository_title"
-        app:layout_constraintTop_toBottomOf="@id/repository_title" />
+        app:layout_constraintEnd_toEndOf="@id/request_title"
+        app:layout_constraintLeft_toLeftOf="@id/request_title"
+        app:layout_constraintStart_toStartOf="@id/request_title"
+        app:layout_constraintTop_toBottomOf="@id/request_title" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -36,14 +36,14 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/repository_body"
+        app:layout_constraintTop_toBottomOf="@id/request_body"
         app:srcCompat="@android:drawable/ic_menu_camera"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="91dp"
        />
 
     <TextView
-        android:id="@+id/repository_username"
+        android:id="@+id/request_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -52,17 +52,17 @@
         android:textColor="@color/teal_700"
         android:textSize="10dp"
         app:layout_constraintStart_toEndOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/repository_body" />
+        app:layout_constraintTop_toBottomOf="@id/request_body" />
 
     <TextView
-        android:id="@+id/repository_name_surmane"
+        android:id="@+id/request_fullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
         android:text="Name Surname"
         android:textSize="10dp"
         app:layout_constraintStart_toEndOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/repository_username"/>
+        app:layout_constraintTop_toBottomOf="@id/request_username"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
